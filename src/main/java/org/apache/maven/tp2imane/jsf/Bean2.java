@@ -1,18 +1,18 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSF/JSFManagedBean.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package jsf;   // Déclaration du package
+package org.apache.maven.tp2imane.jsf;
 
 import java.util.ArrayList;
 import java.util.List;
 import jakarta.inject.Named;
 import jakarta.enterprise.context.RequestScoped;
 
-@Named(value = "bean") // Annotation indiquant que cet objet est géré par CDI (Contexts and Dependency Injection) avec le nom "bean"
-@RequestScoped // Portée de l'objet bean (RequestScoped signifie que l'objet est créé pour chaque requête)
+@Named(value = "bean3") // Annotation indiquant que cet objet est géré par CDI (Contexts and Dependency Injection) avec le nom "bean2"
+@RequestScoped // Portée de l'objet bean2 (RequestScoped signifie que l'objet est créé pour chaque requête)
 
-public class Bean {
+public class Bean2 { // Classe Bean1 (nom de la classe peut être différent du nom de l'objet)
 
     private int nombre; // Déclaration de la variable d'instance "nombre"
 
@@ -34,6 +34,6 @@ public class Bean {
     }
 
     public String afficher() { // Méthode pour rediriger vers une autre page
-        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true"; // Retourne l'URL de redirection
+        return "affichage__3?nb=" + nombre + "&amp;faces-redirect=true"; // Retourne l'URL de redirection
     }
 }
